@@ -3,15 +3,14 @@ import vertexai
 import os
 from typing import Optional
 # from google.cloud.aiplatform_v1beta1.types import Content, Part
-from vertexai.generative_models import GenerativeModel, Part, ChatSession, Content, GenerationConfig
+from vertexai.generative_models import GenerativeModel, Part, Content, GenerationConfig
 
 
 @llm.hookimpl
 def register_models(register):
     # TODO: Should these be prefixed with vertex/ or something?
-    register(Vertex('gemini-1.5-pro-preview-0409'))
-    register(Vertex('gemini-1.0-pro-vision-001'))
-    register(Vertex('gemini-experimental'))
+    register(Vertex('gemini-1.5-pro-latest'))
+    register(Vertex('gemini-1.5-flash-latest'))
 
     # TODO: How to register custom models?
 
