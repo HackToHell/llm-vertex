@@ -9,8 +9,8 @@ from vertexai.generative_models import GenerativeModel, Part, Content, Generatio
 @llm.hookimpl
 def register_models(register):
     # TODO: Should these be prefixed with vertex/ or something?
-    register(Vertex('gemini-1.5-pro-latest'))
-    register(Vertex('gemini-1.5-flash-latest'))
+    register(Vertex('gemini-1.5-pro-002'))
+    register(Vertex('gemini-1.5-flash-002'))
 
     # TODO: How to register custom models?
 
